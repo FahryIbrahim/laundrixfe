@@ -177,7 +177,7 @@ class DetailLaundryPage extends StatelessWidget {
                       heroTag: 'fab-back',
                       onPressed: () => Navigator.pop(context),
                       backgroundColor: Colors.white,
-                      child: const Icon(Icons.arrow_back),
+                      child: const Icon(Icons.arrow_back, color: Colors.black),
                     ),
                   ],
                 ),

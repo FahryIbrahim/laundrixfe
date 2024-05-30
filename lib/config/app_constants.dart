@@ -7,12 +7,12 @@ import '../pages/dashboard_views/my_laundry_view.dart';
 class AppConstants {
   static const appName = 'Laundrix';
 
-  static const _host = 'http://192.168.21.8:8000';
+  static const _host = 'http://192.168.1.40:8000';
 
-  /// ``` baseURL = 'http://192.168.21.8:8000/api' ```
+  /// ``` baseURL = 'http://192.168.1.40:8000/api' ```
   static const baseURL = '$_host/api';
 
-  /// ``` baseURL = 'http://192.168.21.8:8000/storage' ```
+  /// ``` baseURL = 'http://192.168.1.40:8000/storage' ```
   static const baseImageURL = '$_host/storage';
 
   static const laundryStatusCategory = [
