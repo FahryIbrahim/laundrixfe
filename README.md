@@ -26,8 +26,12 @@ Welcome to the frontend repository of the Laundrix application, built using Flut
     ```sh
     cd laundrixfe
     ```
-    
-3. Configure the REST API in lib/config/app_constants.dart:
+3. Make sure the laundrixbe running in Wi-Fi IP address:
+    Example laundrixbe running
+    ```sh
+    php artisan serve --host=your.url
+    ```
+4. Configure the REST API in lib/config/app_constants.dart:
 
     Find Your Local IP Address:
         Ensure the laundrixbe run in your static Wi-Fi IP address (e.g., 192.168.1.88).
@@ -37,16 +41,16 @@ Welcome to the frontend repository of the Laundrix application, built using Flut
         Update the baseURL constant to match your local IP address.
 
     For example, if your laundrixbe is running on 192.168.1.88 and on port 8080, the configuration would look like this: 
-```
-class AppConstants {
-    static const appName = 'Laundrix';
+    ```
+    class AppConstants {
+        static const appName = 'Laundrix';
 
-    static const _host = 'http://192.168.1.88:8000';
+        static const _host = 'http://192.168.1.88:8000';
 
-    //other const
-}
-```
-4. Install dependecies:
+        //other const
+    }
+    ```
+5. Install dependecies:
     ```sh
     flutter pub get
     ```
